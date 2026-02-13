@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            width: 40%;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        button {
+            background: #4e73df;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2e59d9;
+        }
+
+        h1 {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎉 Event Registration Form 🎉</h1>
+
+    <div class="container">
+        <form action="https://formsubmit.co/wonderoomn2345@gmail.com" method="POST">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- Email Subject -->
+            <input type="hidden" name="_subject" value="New Event Registration">
+
+            <!-- Optional Thank You Redirect -->
+            <!-- If you don't have thankyou.html, remove this line -->
+            <!-- <input type="hidden" name="_next" value="thankyou.html"> -->
+
+            <input type="text" name="Name" placeholder="Enter Your Name" required>
+            <input type="email" name="Email" placeholder="Enter Your Email" required>
+            <input type="tel" name="Phone" placeholder="Enter Your Phone Number" required>
+
+            <select name="Event" required>
+                <option value="">Select Event</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Debate">Debate</option>
+                <option value="Quiz">Quiz</option>
+                <option value="Treasure Hunt">Treasure Hunt</option>
+            </select>
+
+            <button type="submit">Register Now</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
